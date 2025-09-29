@@ -25,10 +25,7 @@ html {
   padding: 2rem;
   text-align: center;
   width: 100%;
-  background-image: url('@/assets/DarcOS.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
   position: relative;
 }
 
@@ -39,7 +36,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: radial-gradient(ellipse at center top, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
   z-index: 1;
 }
 
@@ -58,18 +55,23 @@ html {
   font-size: 4rem; 
   margin: 0 0 1rem; 
   letter-spacing: 0.08em; 
-  text-shadow: 0 0 16px rgba(0,255,255,0.6);
-  color: #ffffff;
-  font-weight: bold;
+  background: linear-gradient(90deg, #00ffff 0%, #00ffff 60%, #ff69b4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  font-weight: 300;
 }
 
 .tagline { 
   margin: 0 0 2rem; 
   font-size: 1.2rem; 
-  color: #a8faff; 
+  color: #00ffff; 
   opacity: 0.9;
   max-width: 600px;
   line-height: 1.5;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  font-weight: 300;
 }
 
 .ctaRow { 

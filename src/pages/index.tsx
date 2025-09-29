@@ -11,7 +11,7 @@ export default function IndexPage() {
       <div className={styles.app}>
         <header className={styles.hero}>
           <img src={logo} alt="DarcOS logo" className={styles.logo} />
-          <h1 className={styles.title}>DARCOS</h1>
+          <h1 className={styles.title}>DarcOS</h1>
           <p className={styles.tagline}>Device Agnostic Runtime Compatible Operating System</p>
           <div className={styles.ctaRow}>
             <a className={styles.primaryCta} href="#about">Learn More</a>
