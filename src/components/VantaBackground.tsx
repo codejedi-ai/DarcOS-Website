@@ -15,8 +15,9 @@ export default function VantaBackground() {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x00ffff, // Vibrant blue/cyan for the primary color of the topology
-        backgroundColor: 0x1A0A2A, // Deep dark purple for the background
+        color: 0xff69b4, // Pink/purple to match logo gradient
+        color2: 0x8a2be2, // Purple accent color
+        backgroundColor: 0x0a0a0a, // Dark background to match hero section
       });
     }
 
