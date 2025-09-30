@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className={styles.container}>
         <Link to="/" className={styles.logoContainer}>
           <img src={logo} alt="DarcOS logo" className={styles.logoImage} />
-          <span className={styles.logoText}>DARCOS</span>
+          <span className={styles.logoText}>DarcOS</span>
         </Link>
         <div className={styles.navRight}>
           <ul className={styles.navList}>
