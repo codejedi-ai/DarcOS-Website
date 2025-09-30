@@ -1,0 +1,227 @@
+.adminContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  padding-top: 90px; /* Account for fixed navbar */
+}
+
+.adminContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  background: linear-gradient(90deg, #00ffff 0%, #00ffff 60%, #ff69b4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  font-weight: 300;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.testSection {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  color: #00ffff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.inputGroup {
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  color: #e6fdff;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background: linear-gradient(45deg, #00ffff, #0080ff);
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.4);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #00ffff;
+  margin: 2rem 0;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-top: 2px solid #00ffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem 0;
+  color: #ff6b6b;
+}
+
+.error h3 {
+  margin: 0 0 0.5rem;
+  color: #ff6b6b;
+}
+
+.response {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.response h3 {
+  margin: 0 0 1rem;
+  color: #00ffff;
+}
+
+.jsonResponse {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 1rem;
+  color: #e6fdff;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.info {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.info h3 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.endpointList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.endpointList li {
+  margin-bottom: 0.5rem;
+  color: #e6fdff;
+}
+
+.endpointList code {
+  background: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .adminContent {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+  }
+  
+  .button {
+    width: 100%;
+  }
+  
+  .input {
+    max-width: 100%;
+  }
+}

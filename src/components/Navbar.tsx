@@ -11,6 +11,7 @@ const Navbar = () => {
     { path: '/about', label: 'About' },
     { path: '/features', label: 'Features' },
     { path: '/download', label: 'Download' },
+    { path: '/admin', label: 'Admin' },
   ];
 
   useEffect(() => {
