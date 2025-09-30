@@ -62,7 +62,7 @@ export default function AdminPage() {
       setError('Please enter a name');
       return;
     }
-    callApi(`/api/hello/${encodeURIComponent(name)}`);
+    callApi(`/api/hello?name=${encodeURIComponent(name)}`);
   };
 
   const testHelloPost = () => {
@@ -150,7 +150,7 @@ export default function AdminPage() {
             <h3>Available Endpoints:</h3>
             <ul className={styles.endpointList}>
               <li><code>GET /api/hello</code> - Basic hello world</li>
-              <li><code>GET /api/hello/:name</code> - Hello with name parameter</li>
+              <li><code>GET /api/hello?name=...</code> - Hello with name query parameter</li>
               <li><code>POST /api/hello</code> - Hello with name in request body</li>
             </ul>
           </div>
