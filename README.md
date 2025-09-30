@@ -1,6 +1,6 @@
-# DarcOS - Web-Based OS for Exploring Darcy128 ISA
+# DarcOS - Web-Based OS for Exploring DARCY128 ISA
 
-A web-based operating system designed for exploring the novel Darcy128 ISA (Instruction Set Architecture) and HIPS128 processor architecture. Built on the foundation of 32-bit MIPS instructions, DarcOS serves as an educational platform for understanding theoretical 128-bit processor concepts.
+A web-based operating system designed for exploring the novel DARCY128 ISA (Instruction Set Architecture) and HIPS128 processor architecture. Inspired by 32-bit MIPS instructions but evolving into a 128-bit processor, DarcOS serves as an educational platform for understanding theoretical 128-bit processor concepts.
 
 ## 📊 Processor Evolution Analysis
 

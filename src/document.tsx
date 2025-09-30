@@ -9,7 +9,7 @@ export default function Document() {
     <html>
       <head>
         <meta charSet="utf-8" />
-        <meta name="description" content={description || 'DarcOS - Web-based operating system for exploring the novel Darcy128 ISA and HIPS128 processor architecture'} />
+        <meta name="description" content={description || 'DarcOS - Web-based operating system for exploring the novel DARCY128 ISA and HIPS128 processor architecture'} />
         <meta name="theme-color" content="#00131a" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -21,7 +21,7 @@ export default function Document() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" />
         <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.topology.min.js" />
         <Meta />
-        <Title>DarcOS — Web-Based OS for Exploring Darcy128 ISA</Title>
+        <Title>DarcOS — Web-Based OS for Exploring DARCY128 ISA</Title>
         <Links />
       </head>
       <body>

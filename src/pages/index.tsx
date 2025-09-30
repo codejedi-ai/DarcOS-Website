@@ -12,9 +12,9 @@ export default function IndexPage() {
         <header className={styles.hero}>
           <img src={logo} alt="DarcOS logo" className={styles.logo} />
           <h1 className={styles.title}>DarcOS</h1>
-          <p className={styles.acronym}>Darcy128 Architecture Runtime Computing Operating System</p>
+          <p className={styles.acronym}>DARCY128 Architecture Runtime Computing Operating System</p>
           <p className={styles.originalAcronym}>Device Agnostic Runtime Compatible Operating System</p>
-          <p className={styles.tagline}>Web-Based OS for Exploring Darcy128 ISA</p>
+          <p className={styles.tagline}>Web-Based OS for Exploring DARCY128 ISA</p>
           <div className={styles.ctaRow}>
             <a className={styles.primaryCta} href="#about">Learn More</a>
             <a className={styles.secondaryCta} href="#features">Explore Features</a>
@@ -32,8 +32,8 @@ export default function IndexPage() {
             </p>
             <p className={styles.sectionLead}>
               Built on the foundation of proven 32-bit MIPS instruction set architecture, DarcOS explores the 
-              theoretical boundaries of the <strong>Darcy128 ISA</strong> - a novel 128-bit instruction set that 
-              pushes the limits of processor design. Through the <strong>HIPS128</strong> (Hundreds Instruction 
+              theoretical boundaries of the <strong>DARCY128 ISA</strong> - a novel 128-bit instruction set inspired by 
+              MIPS but evolving into a 128-bit processor. Through the <strong>HIPS128</strong> (Hundreds Instruction 
               Per Second) architecture, DarcOS demonstrates how modern web technologies can simulate complex 
               processor architectures while acknowledging the energy constraints that make 128-bit processors 
               currently impractical for real-world deployment.
@@ -46,13 +46,13 @@ export default function IndexPage() {
           </section>
 
           <section id="features" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Darcy128 ISA Features</h2>
+            <h2 className={styles.sectionTitle}>DARCY128 ISA Features</h2>
             <div className={styles.cards}>
               <div className={styles.card}>
-                <h3>128-bit Architecture</h3>
+                <h3>DARCY128 Architecture</h3>
                 <p>
-                  Theoretical 128-bit instruction set built on 32-bit MIPS foundation, 
-                  exploring the boundaries of processor design and energy efficiency.
+                  Theoretical 128-bit instruction set inspired by MIPS but evolving into 
+                  a 128-bit processor, exploring the boundaries of processor design and energy efficiency.
                 </p>
               </div>
               <div className={styles.card}>
@@ -70,10 +70,10 @@ export default function IndexPage() {
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>MIPS Foundation</h3>
+                <h3>MIPS-Inspired Design</h3>
                 <p>
-                  Built on proven 32-bit MIPS instruction set architecture, 
-                  providing a solid foundation for theoretical 128-bit extensions.
+                  Inspired by proven 32-bit MIPS instruction set architecture, 
+                  DARCY128 evolves the familiar MIPS concepts into 128-bit processing capabilities.
                 </p>
               </div>
               <div className={styles.card}>
