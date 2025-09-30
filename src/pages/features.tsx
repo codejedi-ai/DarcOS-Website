@@ -1,6 +1,6 @@
 import VantaBackground from '@/components/VantaBackground';
 import Navbar from '@/components/Navbar';
-import styles from './features.module.css';
+import styles from '@/styles/features.module.css';
 
 export default function FeaturesPage() {
   return (

@@ -1,6 +1,6 @@
 import VantaBackground from '@/components/VantaBackground';
 import Navbar from '@/components/Navbar';
-import styles from './download.module.css';
+import styles from '@/styles/download.module.css';
 
 export default function DownloadPage() {
   return (

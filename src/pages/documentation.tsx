@@ -1,6 +1,6 @@
 import VantaBackground from '@/components/VantaBackground';
 import Navbar from '@/components/Navbar';
-import styles from './documentation.module.css';
+import styles from '@/styles/documentation.module.css';
 
 export default function DocumentationPage() {
   return (

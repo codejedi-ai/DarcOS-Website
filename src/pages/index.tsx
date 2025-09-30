@@ -1,7 +1,7 @@
 import logo from '@/assets/logo.png';
 import VantaBackground from '@/components/VantaBackground';
 import Navbar from '@/components/Navbar';
-import styles from './index.module.css';
+import styles from '@/styles/index.module.css';
 
 export default function IndexPage() {
   return (

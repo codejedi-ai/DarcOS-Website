@@ -11,8 +11,14 @@ export default defineConfig(() => ({
     onDemand: true,
     format: 'esm',
   },
-  api: {
-    // Enable API routes
-    enable: true,
-  },
+  // Proxy API calls to Netlify Functions
+  proxy: {
+    '/api': {
+      target: 'http://localhost:8888',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': '/api'
+      }
+    }
+  }
 }));

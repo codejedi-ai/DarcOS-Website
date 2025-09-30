@@ -26,6 +26,10 @@ export default defineRoutes([
         path: '/download',
         component: () => import('@/pages/download'),
       },
+      {
+        path: '/api-test',
+        component: () => import('@/pages/api-test'),
+      },
     ],
   },
 ]);
