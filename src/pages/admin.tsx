@@ -35,12 +35,18 @@ export default function AdminPage() {
       }
 
       const res = await fetch(endpoint, options);
-      const data = await res.json();
-
+      
       if (!res.ok) {
-        throw new Error(data.message || 'API call failed');
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       }
 
+      const contentType = res.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        const text = await res.text();
+        throw new Error(`Expected JSON response but got: ${text.substring(0, 100)}...`);
+      }
+
+      const data = await res.json();
       setResponse(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');

@@ -11,4 +11,8 @@ export default defineConfig(() => ({
     onDemand: true,
     format: 'esm',
   },
+  api: {
+    // Enable API routes
+    enable: true,
+  },
 }));
