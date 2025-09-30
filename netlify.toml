@@ -36,6 +36,21 @@
   status = 200
 
 [[redirects]]
+  from = "/canvas"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/stepping"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/registers"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
   from = "/documentation"
   to = "/index.html"
   status = 200
