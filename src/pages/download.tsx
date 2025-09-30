@@ -56,6 +56,26 @@ export default function DownloadPage() {
             </section>
 
             <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>WLP4 Compilation Pipeline</h2>
+              <div className={styles.releaseCard}>
+                <div className={styles.releaseInfo}>
+                  <h3>CS241-wlp4-compile-pipeline</h3>
+                  <p className={styles.releaseDate}>WLP4 to Assembly Compiler</p>
+                  <p className={styles.releaseDesc}>
+                    The WLP4 to assembly compilation pipeline! This compiler converts 
+                    WLP4 source code into assembly language, creating the bridge between 
+                    high-level programming and the DARCY128 ISA. Part of the complete 
+                    toolchain from WLP4 → Assembly → Machine Code → DARCY128 Emulator.
+                  </p>
+                </div>
+                <div className={styles.downloadActions}>
+                  <a href="https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View on GitHub</a>
+                  <a href="https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Source Code</a>
+                </div>
+              </div>
+            </section>
+
+            <section className={styles.section}>
               <h2 className={styles.sectionTitle}>MIPS32 Assembler for DARCY128</h2>
               <div className={styles.releaseCard}>
                 <div className={styles.releaseInfo}>

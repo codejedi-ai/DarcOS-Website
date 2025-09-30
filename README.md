@@ -16,14 +16,20 @@ This analysis covers:
 - Performance projections and quantitative analysis
 - When 128-bit architecture would actually matter
 
-## 🚀 DARCY128 Emulator
+## 🚀 DARCY128 Complete Toolchain
 
-The actual implementation of the DARCY128 processor emulator:
+The complete implementation ecosystem for the DARCY128 processor:
 
 - **[DARCY128-Emulator](https://github.com/codejedi-ai/DARCY128-Emulator)** - Core processor emulator implementation
+- **[CS241-wlp4-compile-pipeline](https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline)** - WLP4 to assembly compiler
 - **[MIPS32-Assembler](https://github.com/codejedi-ai/MIPS32-Assembler)** - Foundation assembler for DARCY128 ISA
 
-These repositories contain the actual code implementations that bring the theoretical DARCY128 architecture to life!
+### Complete Development Pipeline:
+```
+WLP4 Source Code → WLP4 Compiler → Assembly → MIPS32 Assembler → Machine Code → DARCY128 Emulator
+```
+
+These repositories contain the complete toolchain that brings the theoretical DARCY128 architecture to life!
 
 ## Usage
 
