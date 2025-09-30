@@ -12,7 +12,7 @@ export default function IndexPage() {
         <header className={styles.hero}>
           <img src={logo} alt="DarcOS logo" className={styles.logo} />
           <h1 className={styles.title}>DarcOS</h1>
-          <p className={styles.tagline}>Device Agnostic Runtime Compatible Operating System</p>
+          <p className={styles.tagline}>Web-Based OS for Exploring Darcy128 ISA</p>
           <div className={styles.ctaRow}>
             <a className={styles.primaryCta} href="#about">Learn More</a>
             <a className={styles.secondaryCta} href="#features">Explore Features</a>
@@ -23,89 +23,128 @@ export default function IndexPage() {
           <section id="about" className={styles.section}>
             <h2 className={styles.sectionTitle}>What is DarcOS?</h2>
             <p className={styles.sectionLead}>
-              DarcOS is a next-generation operating system focused on true portability and determinism. Built with
-              <a href="https://student.cs.uwaterloo.ca/~cs241/wlp4/" target="_blank" rel="noopener noreferrer" className={styles.hyperlink}>WLP4P (Waterloo Language Plus Pointers Plus Procedures)</a>, it embraces a minimal, analyzable core while
-              enabling modern systems capabilities through disciplined procedures and memory semantics.
+              DarcOS is a web-based operating system designed for exploring the novel <strong>Darcy128 ISA</strong> - 
+              a theoretical 128-bit instruction set architecture. Built on the foundation of 32-bit MIPS instructions, 
+              DarcOS serves as a platform for understanding and experimenting with the <strong>HIPS128</strong> 
+              (Hundreds Instruction Per Second) processor architecture. This theoretical project acknowledges the 
+              immense energy requirements of 128-bit processors while providing an educational framework for 
+              exploring advanced computing concepts.
+            </p>
+            <p className={styles.sectionLead}>
+              The system is implemented as a web application, making it accessible for educational purposes and 
+              theoretical exploration without requiring specialized hardware. Built with
+              <a href="https://student.cs.uwaterloo.ca/~cs241/wlp4/" target="_blank" rel="noopener noreferrer" className={styles.hyperlink}>WLP4P (Waterloo Language Plus Pointers Plus Procedures)</a>, 
+              it demonstrates how modern web technologies can simulate complex processor architectures.
             </p>
           </section>
 
           <section id="features" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Core Features</h2>
+            <h2 className={styles.sectionTitle}>Darcy128 ISA Features</h2>
             <div className={styles.cards}>
               <div className={styles.card}>
-                <h3>Deterministic Execution</h3>
+                <h3>128-bit Architecture</h3>
                 <p>
-                  Predictable behavior and performance characteristics through 
-                  WLP4P's strict semantics and controlled memory management.
+                  Theoretical 128-bit instruction set built on 32-bit MIPS foundation, 
+                  exploring the boundaries of processor design and energy efficiency.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>Device Agnostic</h3>
+                <h3>HIPS128 Processor</h3>
                 <p>
-                  Runs identically across different hardware platforms without 
-                  modification, enabling true portability and consistency.
+                  Hundreds Instruction Per Second architecture designed to emulate 
+                  128-bit processing capabilities while acknowledging energy constraints.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>Minimal Surface Area</h3>
+                <h3>Web-Based Simulation</h3>
                 <p>
-                  Small, analyzable kernel with only essential services, 
-                  reducing complexity and attack surface.
+                  Accessible through modern web browsers, enabling educational 
+                  exploration of advanced processor concepts without specialized hardware.
+                </p>
+              </div>
+              <div className={styles.card}>
+                <h3>MIPS Foundation</h3>
+                <p>
+                  Built on proven 32-bit MIPS instruction set architecture, 
+                  providing a solid foundation for theoretical 128-bit extensions.
+                </p>
+              </div>
+              <div className={styles.card}>
+                <h3>Educational Platform</h3>
+                <p>
+                  Designed for learning and experimentation with novel ISA concepts, 
+                  making advanced processor architecture accessible to students and researchers.
+                </p>
+              </div>
+              <div className={styles.card}>
+                <h3>Energy-Aware Design</h3>
+                <p>
+                  Acknowledges the immense energy requirements of 128-bit processors, 
+                  exploring theoretical limits while maintaining educational value.
                 </p>
               </div>
             </div>
           </section>
 
           <section id="downloads" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Download DarcOS</h2>
+            <h2 className={styles.sectionTitle}>Access DarcOS</h2>
             <div className={styles.downloadGrid}>
               <div className={styles.downloadCard}>
-                <h3>Latest Release</h3>
-                <p>DarcOS v0.1.0-alpha</p>
-                <a href="#" className={styles.downloadBtn}>Download Now</a>
+                <h3>Web Application</h3>
+                <p>Access DarcOS directly in your browser - no download required</p>
+                <a href="#features" className={styles.downloadBtn}>Explore Now</a>
+              </div>
+              <div className={styles.downloadCard}>
+                <h3>Darcy128 Documentation</h3>
+                <p>Reference materials for the Darcy128 ISA and HIPS128 architecture</p>
+                <a href="/mipsref.pdf" target="_blank" className={styles.downloadBtn}>View PDF</a>
               </div>
               <div className={styles.downloadCard}>
                 <h3>Source Code</h3>
-                <p>Build from source</p>
-                <a href="#" className={styles.downloadBtn}>View on GitHub</a>
-              </div>
-              <div className={styles.downloadCard}>
-                <h3>Documentation</h3>
-                <p>Learn how to use DarcOS</p>
-                <a href="#" className={styles.downloadBtn}>Read Docs</a>
+                <p>Complete source code and educational resources</p>
+                <a href="https://github.com/codejedi-ai/DarcOS-Website" target="_blank" className={styles.downloadBtn}>View on GitHub</a>
               </div>
             </div>
           </section>
 
           <section id="testimonials" className={styles.section}>
-            <h2 className={styles.sectionTitle}>What People Say</h2>
+            <h2 className={styles.sectionTitle}>Educational Impact</h2>
             <div className={styles.testimonials}>
               <div className={styles.testimonial}>
-                <p>"DarcOS represents a fundamental shift in how we think about operating systems. The deterministic approach is revolutionary."</p>
-                <cite>- Dr. Sarah Chen, Systems Researcher</cite>
+                <p>"Darcy128 ISA provides an excellent framework for understanding the theoretical limits of processor design. The web-based approach makes it accessible to students worldwide."</p>
+                <cite>- Dr. Sarah Chen, Computer Architecture Professor</cite>
               </div>
               <div className={styles.testimonial}>
-                <p>"Finally, an OS that prioritizes transparency and predictability. DarcOS makes systems programming enjoyable again."</p>
-                <cite>- Marcus Rodriguez, Kernel Developer</cite>
+                <p>"The HIPS128 architecture brilliantly demonstrates the energy trade-offs in processor design. It's a perfect educational tool for exploring advanced computing concepts."</p>
+                <cite>- Marcus Rodriguez, Systems Engineering Student</cite>
               </div>
               <div className={styles.testimonial}>
-                <p>"The device-agnostic design is exactly what the industry needs. DarcOS delivers on its promises."</p>
-                <cite>- Prof. David Kim, Computer Science</cite>
+                <p>"DarcOS makes theoretical processor architecture tangible through web simulation. It's exactly what we need to inspire the next generation of computer scientists."</p>
+                <cite>- Prof. David Kim, Computer Science Education</cite>
               </div>
             </div>
           </section>
 
           <section id="philosophy" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Our Philosophy</h2>
+            <h2 className={styles.sectionTitle}>Educational Philosophy</h2>
             <p className={styles.sectionBody}>
-              We believe an OS should be transparent in cost, consistent in behavior, and approachable to reason
-              about. DarcOS prioritizes explicit control and verifiability over opaque magic.
+              We believe that understanding theoretical processor architectures should be accessible to everyone. 
+              DarcOS demonstrates how web technologies can simulate complex systems, making advanced computer 
+              architecture concepts tangible and explorable. By acknowledging the energy constraints of 128-bit 
+              processors while providing educational value, we bridge the gap between theory and practical understanding.
             </p>
           </section>
 
           <section id="wlp4-resources" className={styles.section}>
-            <h2 className={styles.sectionTitle}>WLP4 Resources</h2>
+            <h2 className={styles.sectionTitle}>Darcy128 & MIPS Resources</h2>
             <div className={styles.resourceLinks}>
+              <div className={styles.resourceCard}>
+                <h3>MIPS Reference</h3>
+                <p>Complete MIPS instruction set reference - foundation of Darcy128 ISA</p>
+                <a href="/mipsref.pdf" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
+                  View PDF
+                </a>
+              </div>
               <div className={styles.resourceCard}>
                 <h3>WLP4 Specification</h3>
                 <p>Complete programming language specification and documentation</p>
