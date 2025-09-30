@@ -7,6 +7,7 @@ export default defineConfig(() => ({
   minify,
   ssr: false,
   ssg: false,
+  outputDir: 'dist',
   server: {
     onDemand: true,
     format: 'esm',
