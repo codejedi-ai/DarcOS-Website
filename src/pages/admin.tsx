@@ -15,7 +15,6 @@ export default function AdminPage() {
   const [response, setResponse] = useState<ApiResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [name, setName] = useState('');
 
   const callApi = async (endpoint: string, method: 'GET' | 'POST' = 'GET', body?: any) => {
     setLoading(true);
@@ -57,21 +56,7 @@ export default function AdminPage() {
 
   const testHelloWorld = () => callApi('/api/hello');
   
-  const testHelloWithName = () => {
-    if (!name.trim()) {
-      setError('Please enter a name');
-      return;
-    }
-    callApi(`/api/hello?name=${encodeURIComponent(name)}`);
-  };
-
-  const testHelloPost = () => {
-    if (!name.trim()) {
-      setError('Please enter a name');
-      return;
-    }
-    callApi('/api/hello', 'POST', { name });
-  };
+  const testHelloPost = () => callApi('/api/hello', 'POST');
 
   return (
     <>
@@ -84,18 +69,6 @@ export default function AdminPage() {
           <div className={styles.testSection}>
             <h2 className={styles.sectionTitle}>API Testing</h2>
             
-            <div className={styles.inputGroup}>
-              <label htmlFor="name" className={styles.label}>Name (for personalized endpoints):</label>
-              <input
-                id="name"
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Enter your name"
-                className={styles.input}
-              />
-            </div>
-
             <div className={styles.buttonGroup}>
               <button 
                 onClick={testHelloWorld}
@@ -106,19 +79,11 @@ export default function AdminPage() {
               </button>
               
               <button 
-                onClick={testHelloWithName}
-                disabled={loading || !name.trim()}
-                className={styles.button}
-              >
-                Test Hello with Name (GET)
-              </button>
-              
-              <button 
                 onClick={testHelloPost}
-                disabled={loading || !name.trim()}
+                disabled={loading}
                 className={styles.button}
               >
-                Test Hello with Name (POST)
+                Test Hello World (POST)
               </button>
             </div>
           </div>
@@ -149,9 +114,8 @@ export default function AdminPage() {
           <div className={styles.info}>
             <h3>Available Endpoints:</h3>
             <ul className={styles.endpointList}>
-              <li><code>GET /api/hello</code> - Basic hello world</li>
-              <li><code>GET /api/hello?name=...</code> - Hello with name query parameter</li>
-              <li><code>POST /api/hello</code> - Hello with name in request body</li>
+              <li><code>GET /api/hello</code> - Returns {`{text: "hello world response"}`}</li>
+              <li><code>POST /api/hello</code> - Returns {`{text: "hello world response"}`}</li>
             </ul>
           </div>
         </div>

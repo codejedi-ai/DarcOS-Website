@@ -14,49 +14,22 @@ export default async function handler(req: any, res: any) {
   try {
     if (req.method === 'GET') {
       // Handle GET /api/hello
-      if (req.query.name) {
-        // Handle GET /api/hello?name=...
-        res.status(200).json({
-          message: `Hello ${req.query.name} from DarcOS API!`,
-          timestamp: new Date().toISOString(),
-          status: 'success',
-          parameter: req.query.name
-        });
-      } else {
-        // Handle GET /api/hello
-        res.status(200).json({
-          message: 'Hello World from DarcOS API!',
-          timestamp: new Date().toISOString(),
-          status: 'success',
-          data: {
-            version: '1.0.0',
-            framework: 'ICE.js',
-            environment: process.env.NODE_ENV || 'development'
-          }
-        });
-      }
+      res.status(200).json({
+        text: "hello world response"
+      });
     } else if (req.method === 'POST') {
       // Handle POST /api/hello
-      const body = req.body || {};
-      const { name } = body;
-      
       res.status(200).json({
-        message: `Hello ${name || 'World'} from DarcOS API!`,
-        timestamp: new Date().toISOString(),
-        status: 'success',
-        receivedData: body
+        text: "hello world response"
       });
     } else {
       res.status(405).json({
-        message: 'Method not allowed',
-        status: 'error'
+        text: "Method not allowed"
       });
     }
   } catch (error) {
     res.status(500).json({
-      message: 'Internal server error',
-      status: 'error',
-      error: error instanceof Error ? error.message : 'Unknown error'
+      text: "Internal server error"
     });
   }
 }
