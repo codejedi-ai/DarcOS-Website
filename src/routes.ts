@@ -11,18 +11,6 @@ export default defineRoutes([
         component: () => import('@/pages/index'),
       },
       {
-        path: '/canvas',
-        component: () => import('@/pages/canvas'),
-      },
-      {
-        path: '/stepping',
-        component: () => import('@/pages/stepping'),
-      },
-      {
-        path: '/registers',
-        component: () => import('@/pages/registers'),
-      },
-      {
         path: '/about',
         component: () => import('@/pages/about'),
       },
