@@ -143,13 +143,27 @@ export default function IndexPage() {
           </section>
 
           <section id="wlp4-resources" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Darcy128 & MIPS Resources</h2>
+            <h2 className={styles.sectionTitle}>DARCY128 & Implementation Resources</h2>
             <div className={styles.resourceLinks}>
               <div className={styles.resourceCard}>
+                <h3>DARCY128 Emulator</h3>
+                <p>The actual implementation of the DARCY128 processor emulator</p>
+                <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
+                  View on GitHub
+                </a>
+              </div>
+              <div className={styles.resourceCard}>
                 <h3>MIPS Reference</h3>
-                <p>Complete MIPS instruction set reference - foundation of Darcy128 ISA</p>
+                <p>Complete MIPS instruction set reference - foundation of DARCY128 ISA</p>
                 <a href="/mipsref.pdf" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
                   View PDF
+                </a>
+              </div>
+              <div className={styles.resourceCard}>
+                <h3>MIPS32 Assembler</h3>
+                <p>Foundation assembler for DARCY128 ISA development</p>
+                <a href="https://github.com/codejedi-ai/MIPS32-Assembler" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
+                  View on GitHub
                 </a>
               </div>
               <div className={styles.resourceCard}>

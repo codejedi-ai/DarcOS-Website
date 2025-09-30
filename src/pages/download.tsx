@@ -36,17 +36,37 @@ export default function DownloadPage() {
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>MIPS32 Assembler for Darcy128</h2>
+              <h2 className={styles.sectionTitle}>DARCY128 Emulator</h2>
+              <div className={styles.releaseCard}>
+                <div className={styles.releaseInfo}>
+                  <h3>DARCY128-Emulator</h3>
+                  <p className={styles.releaseDate}>Theoretical 128-bit Processor Emulator</p>
+                  <p className={styles.releaseDesc}>
+                    The actual implementation of the DARCY128 processor emulator! This is the 
+                    core emulator that simulates the theoretical 128-bit processor architecture 
+                    inspired by MIPS but evolving into 128-bit capabilities. Experience the 
+                    DARCY128 ISA in action through this educational emulator.
+                  </p>
+                </div>
+                <div className={styles.downloadActions}>
+                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View on GitHub</a>
+                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Source Code</a>
+                </div>
+              </div>
+            </section>
+
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>MIPS32 Assembler for DARCY128</h2>
               <div className={styles.releaseCard}>
                 <div className={styles.releaseInfo}>
                   <h3>MIPS32-Assembler</h3>
-                  <p className={styles.releaseDate}>Future Darcy128 ISA Tool</p>
+                  <p className={styles.releaseDate}>Foundation for DARCY128 ISA</p>
                   <p className={styles.releaseDesc}>
-                    The assembler for the future Darcy128 ISA! This MIPS32 assembler 
+                    The assembler for the DARCY128 ISA! This MIPS32 assembler 
                     converts assembly language source code into machine code, supporting 
                     both standalone binary files and MERL (Module Entry Record Language) 
-                    files for linking. Built as the foundation for the theoretical 
-                    Darcy128 instruction set architecture.
+                    files for linking. Built as the foundation for the DARCY128 
+                    instruction set architecture.
                   </p>
                 </div>
                 <div className={styles.downloadActions}>

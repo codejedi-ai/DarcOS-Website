@@ -16,6 +16,15 @@ This analysis covers:
 - Performance projections and quantitative analysis
 - When 128-bit architecture would actually matter
 
+## 🚀 DARCY128 Emulator
+
+The actual implementation of the DARCY128 processor emulator:
+
+- **[DARCY128-Emulator](https://github.com/codejedi-ai/DARCY128-Emulator)** - Core processor emulator implementation
+- **[MIPS32-Assembler](https://github.com/codejedi-ai/MIPS32-Assembler)** - Foundation assembler for DARCY128 ISA
+
+These repositories contain the actual code implementations that bring the theoretical DARCY128 architecture to life!
+
 ## Usage
 
 ```bash
