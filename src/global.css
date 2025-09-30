@@ -9,9 +9,12 @@
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100vw;
   font-family: 'Inter', sans-serif;
   color: #fff;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 /* Styles for the Vanta.js background container */

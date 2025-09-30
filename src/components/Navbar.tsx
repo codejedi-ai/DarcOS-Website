@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'ice';
 import { useState, useEffect } from 'react';
+import logo from '@/assets/logo.png';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -27,8 +28,9 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
-        <Link to="/" className={styles.logo}>
-          DARCOS
+        <Link to="/" className={styles.logoContainer}>
+          <img src={logo} alt="DarcOS logo" className={styles.logoImage} />
+          <span className={styles.logoText}>DARCOS</span>
         </Link>
         <div className={styles.navRight}>
           <ul className={styles.navList}>
