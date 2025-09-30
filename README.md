@@ -20,16 +20,15 @@ This analysis covers:
 
 The complete implementation ecosystem for the DARCY128 processor:
 
-- **[DARCY128-Emulator](https://github.com/codejedi-ai/DARCY128-Emulator)** - Core processor emulator implementation
-- **[CS241-wlp4-compile-pipeline](https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline)** - WLP4 to assembly compiler
-- **[MIPS32-Assembler](https://github.com/codejedi-ai/MIPS32-Assembler)** - Foundation assembler for DARCY128 ISA
+- **[DARCY128-Emulator](https://github.com/codejedi-ai/DARCY128-Emulator)** - Core processor emulator with register state viewer
+- **[CS241-wlp4-compile-pipeline](https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline)** - WLP4 → Assembly compiler
 
 ### Complete Development Pipeline:
 ```
-WLP4 Source Code → WLP4 Compiler → Assembly → MIPS32 Assembler → Machine Code → DARCY128 Emulator
+WLP4 Source Code → WLP4 Compiler → Assembly → Machine Code → DARCY128 Emulator (with Register State UI)
 ```
 
-These repositories contain the complete toolchain that brings the theoretical DARCY128 architecture to life!
+These repositories contain the complete toolchain that brings the theoretical DARCY128 architecture to life, with live register state inspection for learning and debugging.
 
 ## Usage
 

@@ -153,23 +153,16 @@ export default function IndexPage() {
                 </a>
               </div>
               <div className={styles.resourceCard}>
-                <h3>MIPS Reference</h3>
-                <p>Complete MIPS instruction set reference - foundation of DARCY128 ISA</p>
-                <a href="/mipsref.pdf" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
-                  View PDF
+                <h3>Register State</h3>
+                <p>Inspect live DARCY128 registers (GPRs, PC, flags) in the emulator</p>
+                <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
+                  View Register UI
                 </a>
               </div>
               <div className={styles.resourceCard}>
                 <h3>WLP4 Compiler</h3>
                 <p>WLP4 to assembly compilation pipeline for DARCY128</p>
                 <a href="https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
-                  View on GitHub
-                </a>
-              </div>
-              <div className={styles.resourceCard}>
-                <h3>MIPS32 Assembler</h3>
-                <p>Foundation assembler for DARCY128 ISA development</p>
-                <a href="https://github.com/codejedi-ai/MIPS32-Assembler" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
                   View on GitHub
                 </a>
               </div>

@@ -76,22 +76,20 @@ export default function DownloadPage() {
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>MIPS32 Assembler for DARCY128</h2>
+              <h2 className={styles.sectionTitle}>Register State Viewer</h2>
               <div className={styles.releaseCard}>
                 <div className={styles.releaseInfo}>
-                  <h3>MIPS32-Assembler</h3>
-                  <p className={styles.releaseDate}>Foundation for DARCY128 ISA</p>
+                  <h3>DARCY128 Register UI</h3>
+                  <p className={styles.releaseDate}>Live Emulator Introspection</p>
                   <p className={styles.releaseDesc}>
-                    The assembler for the DARCY128 ISA! This MIPS32 assembler 
-                    converts assembly language source code into machine code, supporting 
-                    both standalone binary files and MERL (Module Entry Record Language) 
-                    files for linking. Built as the foundation for the DARCY128 
-                    instruction set architecture.
+                    Inspect the live DARCY128 CPU register state while running programs: general
+                    purpose registers, program counter, flags, and more. Ideal for debugging and
+                    educational visualization of the 128-bit architecture.
                   </p>
                 </div>
                 <div className={styles.downloadActions}>
-                  <a href="https://github.com/codejedi-ai/MIPS32-Assembler" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View on GitHub</a>
-                  <a href="https://github.com/codejedi-ai/MIPS32-Assembler" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Source Code</a>
+                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View Register UI</a>
+                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Project Repo</a>
                 </div>
               </div>
             </section>
