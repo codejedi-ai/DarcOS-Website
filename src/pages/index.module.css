@@ -21,11 +21,11 @@ html {
   justify-content: center;
   height: 100vh;
   padding: 2rem;
-  padding-top: 90px;
   text-align: center;
   width: 100%;
   background: transparent;
   position: relative;
+  margin-top: -45px; /* Offset navbar height to center content */
 }
 
 .hero::before {
