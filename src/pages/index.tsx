@@ -12,6 +12,8 @@ export default function IndexPage() {
         <header className={styles.hero}>
           <img src={logo} alt="DarcOS logo" className={styles.logo} />
           <h1 className={styles.title}>DarcOS</h1>
+          <p className={styles.acronym}>Darcy128 Architecture Runtime Computing Operating System</p>
+          <p className={styles.originalAcronym}>Device Agnostic Runtime Compatible Operating System</p>
           <p className={styles.tagline}>Web-Based OS for Exploring Darcy128 ISA</p>
           <div className={styles.ctaRow}>
             <a className={styles.primaryCta} href="#about">Learn More</a>
