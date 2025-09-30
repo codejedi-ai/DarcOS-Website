@@ -9,11 +9,9 @@ html {
 .app {
   position: relative;
   z-index: 1;
-  padding-top: 90px; /* Account for fixed navbar */
   width: 100vw;
   margin: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
 .hero {
@@ -23,6 +21,7 @@ html {
   justify-content: center;
   height: 100vh;
   padding: 2rem;
+  padding-top: 90px;
   text-align: center;
   width: 100%;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
