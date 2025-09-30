@@ -10,25 +10,48 @@ export default function DownloadPage() {
       <div className={styles.page}>
         <div className={styles.content}>
           <header className={styles.hero}>
-            <h1 className={styles.title}>Download DarcOS</h1>
-            <p className={styles.subtitle}>Get the latest release and start exploring</p>
+            <h1 className={styles.title}>Access DarcOS</h1>
+            <p className={styles.subtitle}>Web-based exploration of Darcy128 ISA</p>
           </header>
 
           <main className={styles.main}>
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Latest Release</h2>
+              <h2 className={styles.sectionTitle}>Web Application</h2>
               <div className={styles.releaseCard}>
                 <div className={styles.releaseInfo}>
-                  <h3>DarcOS v0.1.0-alpha</h3>
-                  <p className={styles.releaseDate}>Released: December 2024</p>
+                  <h3>DarcOS Web Platform</h3>
+                  <p className={styles.releaseDate}>Available Now</p>
                   <p className={styles.releaseDesc}>
-                    First alpha release featuring core WLP4P runtime, basic kernel functionality, 
-                    and device abstraction layer. Suitable for development and testing.
+                    Access DarcOS directly in your web browser - no download required! 
+                    Explore the Darcy128 ISA and HIPS128 processor architecture through 
+                    interactive web simulation. Perfect for educational purposes and 
+                    theoretical exploration.
                   </p>
                 </div>
                 <div className={styles.downloadActions}>
-                  <a href="#" className={styles.downloadBtn}>Download Now</a>
-                  <a href="#" className={styles.releaseNotes}>Release Notes</a>
+                  <a href="#features" className={styles.downloadBtn}>Explore Now</a>
+                  <a href="#about" className={styles.releaseNotes}>Learn More</a>
+                </div>
+              </div>
+            </section>
+
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>MIPS32 Assembler for Darcy128</h2>
+              <div className={styles.releaseCard}>
+                <div className={styles.releaseInfo}>
+                  <h3>MIPS32-Assembler</h3>
+                  <p className={styles.releaseDate}>Future Darcy128 ISA Tool</p>
+                  <p className={styles.releaseDesc}>
+                    The assembler for the future Darcy128 ISA! This MIPS32 assembler 
+                    converts assembly language source code into machine code, supporting 
+                    both standalone binary files and MERL (Module Entry Record Language) 
+                    files for linking. Built as the foundation for the theoretical 
+                    Darcy128 instruction set architecture.
+                  </p>
+                </div>
+                <div className={styles.downloadActions}>
+                  <a href="https://github.com/codejedi-ai/MIPS32-Assembler" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View on GitHub</a>
+                  <a href="https://github.com/codejedi-ai/MIPS32-Assembler" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Source Code</a>
                 </div>
               </div>
             </section>

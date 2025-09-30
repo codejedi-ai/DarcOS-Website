@@ -21,20 +21,25 @@ export default function IndexPage() {
 
         <main className={styles.main}>
           <section id="about" className={styles.section}>
-            <h2 className={styles.sectionTitle}>What is DarcOS?</h2>
+            <h2 className={styles.sectionTitle}>Introducing DarcOS</h2>
             <p className={styles.sectionLead}>
-              DarcOS is a web-based operating system designed for exploring the novel <strong>Darcy128 ISA</strong> - 
-              a theoretical 128-bit instruction set architecture. Built on the foundation of 32-bit MIPS instructions, 
-              DarcOS serves as a platform for understanding and experimenting with the <strong>HIPS128</strong> 
-              (Hundreds Instruction Per Second) processor architecture. This theoretical project acknowledges the 
-              immense energy requirements of 128-bit processors while providing an educational framework for 
-              exploring advanced computing concepts.
+              <strong>DarcOS</strong> is a revolutionary web-based operating system that brings the theoretical world of 
+              128-bit processor architecture to your browser. Unlike traditional operating systems that require 
+              hardware installation, DarcOS runs entirely in your web browser, making advanced computer 
+              architecture concepts accessible to students, researchers, and enthusiasts worldwide.
             </p>
             <p className={styles.sectionLead}>
-              The system is implemented as a web application, making it accessible for educational purposes and 
-              theoretical exploration without requiring specialized hardware. Built with
-              <a href="https://student.cs.uwaterloo.ca/~cs241/wlp4/" target="_blank" rel="noopener noreferrer" className={styles.hyperlink}>WLP4P (Waterloo Language Plus Pointers Plus Procedures)</a>, 
-              it demonstrates how modern web technologies can simulate complex processor architectures.
+              Built on the foundation of proven 32-bit MIPS instruction set architecture, DarcOS explores the 
+              theoretical boundaries of the <strong>Darcy128 ISA</strong> - a novel 128-bit instruction set that 
+              pushes the limits of processor design. Through the <strong>HIPS128</strong> (Hundreds Instruction 
+              Per Second) architecture, DarcOS demonstrates how modern web technologies can simulate complex 
+              processor architectures while acknowledging the energy constraints that make 128-bit processors 
+              currently impractical for real-world deployment.
+            </p>
+            <p className={styles.sectionLead}>
+              DarcOS represents the future of educational computing - where theoretical concepts become 
+              tangible through interactive web simulation, bridging the gap between academic research and 
+              practical understanding.
             </p>
           </section>
 
