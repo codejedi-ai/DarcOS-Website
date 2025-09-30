@@ -1,32 +1,15 @@
 import logo from '@/assets/logo.png';
 import VantaBackground from '@/components/VantaBackground';
 import Navbar from '@/components/Navbar';
-import { useState, useEffect } from 'react';
 import styles from './index.module.css';
 
 export default function IndexPage() {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   return (
     <>
       <Navbar />
       <VantaBackground />
       <div className={styles.app}>
-        <header 
-          className={styles.hero}
-          style={{
-            '--scroll-opacity': Math.min(scrollY / 500, 1),
-            '--scroll-blur': Math.min(scrollY / 1000, 0.5)
-          } as React.CSSProperties}
-        >
+        <header className={styles.hero}>
           <img src={logo} alt="DarcOS logo" className={styles.logo} />
           <h1 className={styles.title}>DarcOS</h1>
           <p className={styles.tagline}>Device Agnostic Runtime Compatible Operating System</p>

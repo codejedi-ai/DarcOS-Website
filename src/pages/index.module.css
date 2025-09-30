@@ -24,15 +24,8 @@ html {
   padding-top: 90px;
   text-align: center;
   width: 100%;
-  background: linear-gradient(135deg, 
-    rgba(10, 10, 10, calc(0.8 + var(--scroll-opacity) * 0.2)) 0%, 
-    rgba(26, 26, 46, calc(0.7 + var(--scroll-opacity) * 0.3)) 50%, 
-    rgba(22, 33, 62, calc(0.6 + var(--scroll-opacity) * 0.4)) 100%
-  );
-  backdrop-filter: blur(calc(0px + var(--scroll-blur) * 20px));
-  -webkit-backdrop-filter: blur(calc(0px + var(--scroll-blur) * 20px));
+  background: transparent;
   position: relative;
-  transition: all 0.1s ease-out;
 }
 
 .hero::before {
@@ -52,8 +45,6 @@ html {
 .hero > * {
   position: relative;
   z-index: 2;
-  opacity: calc(0.7 + var(--scroll-opacity) * 0.3);
-  transition: opacity 0.1s ease-out;
 }
 
 .logo {
