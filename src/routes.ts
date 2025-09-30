@@ -19,6 +19,10 @@ export default defineRoutes([
         component: () => import('@/pages/features'),
       },
       {
+        path: '/analysis',
+        component: () => import('@/pages/analysis'),
+      },
+      {
         path: '/documentation',
         component: () => import('@/pages/documentation'),
       },

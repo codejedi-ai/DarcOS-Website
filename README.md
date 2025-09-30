@@ -2,6 +2,20 @@
 
 A web-based operating system designed for exploring the novel Darcy128 ISA (Instruction Set Architecture) and HIPS128 processor architecture. Built on the foundation of 32-bit MIPS instructions, DarcOS serves as an educational platform for understanding theoretical 128-bit processor concepts.
 
+## 📊 Processor Evolution Analysis
+
+For a comprehensive analysis of the theoretical benefits of 128-bit processor architecture, see our detailed analysis:
+
+- **[Processor Evolution Analysis](docs/processor-evolution-analysis.md)** - Complete technical analysis
+- **[Web Analysis Page](https://uw-rizzlers.netlify.app/#/analysis)** - Interactive web version
+
+This analysis covers:
+- Historical context of 32-bit to 64-bit transition
+- Theoretical benefits of 128-bit architecture
+- Specific domain applications (AI/ML, Cryptography, Scientific Computing)
+- Performance projections and quantitative analysis
+- When 128-bit architecture would actually matter
+
 ## Usage
 
 ```bash
