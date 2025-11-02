@@ -9,11 +9,9 @@ const Navbar = () => {
   
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/features', label: 'Features' },
-    { path: '/analysis', label: 'Analysis' },
-    { path: '/download', label: 'Download' },
-    { path: '/api-test', label: 'API Test' },
+    { path: '/about', label: 'Philosophy' },
+    { path: '/features', label: 'How It Works' },
+    { path: '/download', label: 'Join Us' },
   ];
 
   useEffect(() => {
@@ -30,15 +28,15 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logoContainer}>
-          <img src={logo} alt="DarcOS logo" className={styles.logoImage} />
-          <span className={styles.logoText}>DarcOS</span>
+          <img src={logo} alt="Impact Commons logo" className={styles.logoImage} />
+          <span className={styles.logoText}>Impact Commons</span>
         </Link>
         <div className={styles.navRight}>
           <ul className={styles.navList}>
             {navItems.map((item) => (
               <li key={item.path} className={styles.navItem}>
-                <Link 
-                  to={item.path} 
+                <Link
+                  to={item.path}
                   className={`${styles.navLink} ${location.pathname === item.path ? styles.active : ''}`}
                 >
                   {item.label}
@@ -47,7 +45,7 @@ const Navbar = () => {
             ))}
           </ul>
           <Link to="/documentation" className={styles.documentationBtn}>
-            Documentation
+            Whitepaper
           </Link>
         </div>
       </div>

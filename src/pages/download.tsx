@@ -10,201 +10,156 @@ export default function DownloadPage() {
       <div className={styles.page}>
         <div className={styles.content}>
           <header className={styles.hero}>
-            <h1 className={styles.title}>Access DarcOS</h1>
-            <p className={styles.subtitle}>Web-based exploration of Darcy128 ISA</p>
+            <h1 className={styles.title}>Join the Movement</h1>
+            <p className={styles.subtitle}>Build the impact economy with us</p>
           </header>
 
           <main className={styles.main}>
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Web Application</h2>
+              <h2 className={styles.sectionTitle}>For Developers</h2>
               <div className={styles.releaseCard}>
                 <div className={styles.releaseInfo}>
-                  <h3>DarcOS Web Platform</h3>
-                  <p className={styles.releaseDate}>Available Now</p>
+                  <h3>Build with Us</h3>
+                  <p className={styles.releaseDate}>Open Source Protocol Development</p>
                   <p className={styles.releaseDesc}>
-                    Access DarcOS directly in your web browser - no download required! 
-                    Explore the Darcy128 ISA and HIPS128 processor architecture through 
-                    interactive web simulation. Perfect for educational purposes and 
-                    theoretical exploration.
+                    Contribute to the Impact Commons protocol. We're building decentralized
+                    infrastructure for impact verification, anonymous coordination, and
+                    privacy-preserving validation. Built on Ethereum, EAS, MACI, and Semaphore.
+                    All code is open source and welcomes contributors.
                   </p>
                 </div>
                 <div className={styles.downloadActions}>
-                  <a href="#features" className={styles.downloadBtn}>Explore Now</a>
+                  <a href="https://github.com/impact-commons" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View on GitHub</a>
+                  <a href="#tech" className={styles.releaseNotes}>Technical Docs</a>
+                </div>
+              </div>
+            </section>
+
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>For Communities</h2>
+              <div className={styles.releaseCard}>
+                <div className={styles.releaseInfo}>
+                  <h3>Join a Pilot Program</h3>
+                  <p className={styles.releaseDate}>Early Adopter Communities</p>
+                  <p className={styles.releaseDesc}>
+                    Are you part of a cooperative, DAO, eco-village, or regenerative community?
+                    We're looking for pilot communities to experiment with impact-based coordination.
+                    Help us test and refine the protocol while building new ways of recognizing
+                    and rewarding value creation in your community.
+                  </p>
+                </div>
+                <div className={styles.downloadActions}>
+                  <a href="#contact" className={styles.downloadBtn}>Apply to Join</a>
                   <a href="#about" className={styles.releaseNotes}>Learn More</a>
                 </div>
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>DARCY128 Emulator</h2>
+              <h2 className={styles.sectionTitle}>For Researchers</h2>
               <div className={styles.releaseCard}>
                 <div className={styles.releaseInfo}>
-                  <h3>DARCY128-Emulator</h3>
-                  <p className={styles.releaseDate}>Theoretical 128-bit Processor Emulator</p>
+                  <h3>Research Collaboration</h3>
+                  <p className={styles.releaseDate}>Post-Capitalist Economics & Web3</p>
                   <p className={styles.releaseDesc}>
-                    The actual implementation of the DARCY128 processor emulator! This is the 
-                    core emulator that simulates the theoretical 128-bit processor architecture 
-                    inspired by MIPS but evolving into 128-bit capabilities. Experience the 
-                    DARCY128 ISA in action through this educational emulator.
+                    Academics and researchers studying alternative economic models, commons-based
+                    peer production, regenerative economics, or cryptographic coordination mechanisms:
+                    collaborate with us to study and document the impact economy in practice.
                   </p>
                 </div>
                 <div className={styles.downloadActions}>
-                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View on GitHub</a>
-                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Source Code</a>
+                  <a href="#contact" className={styles.downloadBtn}>Get in Touch</a>
+                  <a href="/documentation" className={styles.releaseNotes}>Read Whitepaper</a>
                 </div>
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>WLP4 Compilation Pipeline</h2>
-              <div className={styles.releaseCard}>
-                <div className={styles.releaseInfo}>
-                  <h3>CS241-wlp4-compile-pipeline</h3>
-                  <p className={styles.releaseDate}>WLP4 to Assembly Compiler</p>
-                  <p className={styles.releaseDesc}>
-                    The WLP4 to assembly compilation pipeline! This compiler converts 
-                    WLP4 source code into assembly language, creating the bridge between 
-                    high-level programming and the DARCY128 ISA. Part of the complete 
-                    toolchain from WLP4 → Assembly → Machine Code → DARCY128 Emulator.
-                  </p>
-                </div>
-                <div className={styles.downloadActions}>
-                  <a href="https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View on GitHub</a>
-                  <a href="https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Source Code</a>
-                </div>
-              </div>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Register State Viewer</h2>
-              <div className={styles.releaseCard}>
-                <div className={styles.releaseInfo}>
-                  <h3>DARCY128 Register UI</h3>
-                  <p className={styles.releaseDate}>Live Emulator Introspection</p>
-                  <p className={styles.releaseDesc}>
-                    Inspect the live DARCY128 CPU register state while running programs: general
-                    purpose registers, program counter, flags, and more. Ideal for debugging and
-                    educational visualization of the 128-bit architecture.
-                  </p>
-                </div>
-                <div className={styles.downloadActions}>
-                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>View Register UI</a>
-                  <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.releaseNotes}>Project Repo</a>
-                </div>
-              </div>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>System Requirements</h2>
+              <h2 className={styles.sectionTitle}>Who We're Looking For</h2>
               <div className={styles.requirements}>
                 <div className={styles.reqCard}>
-                  <h3>Minimum Requirements</h3>
+                  <h3>Ethical Technologists</h3>
                   <ul>
-                    <li>64-bit x86_64 processor</li>
-                    <li>512 MB RAM</li>
-                    <li>1 GB storage space</li>
-                    <li>UEFI-compatible firmware</li>
+                    <li>Web3 developers interested in social impact</li>
+                    <li>Privacy & cryptography enthusiasts</li>
+                    <li>Open-source contributors</li>
+                    <li>Protocol designers & researchers</li>
                   </ul>
                 </div>
                 <div className={styles.reqCard}>
-                  <h3>Recommended Requirements</h3>
+                  <h3>Regenerative Communities</h3>
                   <ul>
-                    <li>64-bit x86_64 processor</li>
-                    <li>2 GB RAM or more</li>
-                    <li>4 GB storage space</li>
-                    <li>UEFI-compatible firmware</li>
-                    <li>Network connectivity</li>
+                    <li>Worker cooperatives</li>
+                    <li>Decentralized autonomous organizations (DAOs)</li>
+                    <li>Eco-villages & intentional communities</li>
+                    <li>Mutual aid networks</li>
                   </ul>
                 </div>
                 <div className={styles.reqCard}>
-                  <h3>Supported Platforms</h3>
+                  <h3>Post-Capitalist Thinkers</h3>
                   <ul>
-                    <li>Intel x86_64</li>
-                    <li>AMD x86_64</li>
-                    <li>ARM64 (experimental)</li>
-                    <li>RISC-V (planned)</li>
+                    <li>Alternative economics researchers</li>
+                    <li>Commons-based production advocates</li>
+                    <li>Social impact measurement experts</li>
+                    <li>Community organizers</li>
                   </ul>
                 </div>
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Installation Methods</h2>
+              <h2 className={styles.sectionTitle}>Ways to Contribute</h2>
               <div className={styles.installMethods}>
                 <div className={styles.methodCard}>
-                  <h3>ISO Image</h3>
-                  <p>Boot from USB or CD/DVD for testing and installation</p>
+                  <h3>Protocol Development</h3>
+                  <p>Build core infrastructure for impact verification</p>
                   <div className={styles.methodSteps}>
-                    <span>1. Download ISO</span>
-                    <span>2. Create bootable media</span>
-                    <span>3. Boot and install</span>
+                    <span>1. Fork repository</span>
+                    <span>2. Develop features</span>
+                    <span>3. Submit pull request</span>
                   </div>
-                  <a href="#" className={styles.methodBtn}>Download ISO</a>
+                  <a href="https://github.com/impact-commons" target="_blank" rel="noopener noreferrer" className={styles.methodBtn}>Start Contributing</a>
                 </div>
                 <div className={styles.methodCard}>
-                  <h3>Virtual Machine</h3>
-                  <p>Run DarcOS in a virtualized environment</p>
+                  <h3>Community Testing</h3>
+                  <p>Pilot the protocol in real communities</p>
                   <div className={styles.methodSteps}>
-                    <span>1. Download VM image</span>
-                    <span>2. Import to VM software</span>
-                    <span>3. Start and explore</span>
+                    <span>1. Apply for pilot</span>
+                    <span>2. Set up community</span>
+                    <span>3. Provide feedback</span>
                   </div>
-                  <a href="#" className={styles.methodBtn}>Download VM</a>
+                  <a href="#contact" className={styles.methodBtn}>Apply Now</a>
                 </div>
                 <div className={styles.methodCard}>
-                  <h3>Source Code</h3>
-                  <p>Build DarcOS from source for development</p>
+                  <h3>Research & Documentation</h3>
+                  <p>Study and document the impact economy</p>
                   <div className={styles.methodSteps}>
-                    <span>1. Clone repository</span>
-                    <span>2. Install build tools</span>
-                    <span>3. Compile and run</span>
+                    <span>1. Review protocol</span>
+                    <span>2. Conduct research</span>
+                    <span>3. Share findings</span>
                   </div>
-                  <a href="#" className={styles.methodBtn}>View Source</a>
+                  <a href="#contact" className={styles.methodBtn}>Collaborate</a>
                 </div>
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Development Builds</h2>
-              <div className={styles.devBuilds}>
-                <div className={styles.buildCard}>
-                  <h3>Nightly Builds</h3>
-                  <p>Latest development builds with newest features</p>
-                  <div className={styles.buildInfo}>
-                    <span className={styles.buildStatus}>Unstable</span>
-                    <span className={styles.buildDate}>Updated daily</span>
-                  </div>
-                  <a href="#" className={styles.buildBtn}>Download Nightly</a>
-                </div>
-                <div className={styles.buildCard}>
-                  <h3>Beta Releases</h3>
-                  <p>Pre-release versions for testing new features</p>
-                  <div className={styles.buildInfo}>
-                    <span className={styles.buildStatus}>Beta</span>
-                    <span className={styles.buildDate}>Updated weekly</span>
-                  </div>
-                  <a href="#" className={styles.buildBtn}>Download Beta</a>
-                </div>
-              </div>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Getting Help</h2>
+              <h2 className={styles.sectionTitle}>Stay Connected</h2>
               <div className={styles.help}>
                 <div className={styles.helpCard}>
-                  <h3>Installation Guide</h3>
-                  <p>Detailed step-by-step installation instructions</p>
-                  <a href="#" className={styles.helpLink}>Read Guide →</a>
+                  <h3>Newsletter</h3>
+                  <p>Subscribe for updates on protocol development and the impact economy</p>
+                  <a href="#newsletter" className={styles.helpLink}>Subscribe →</a>
                 </div>
                 <div className={styles.helpCard}>
-                  <h3>Troubleshooting</h3>
-                  <p>Common issues and their solutions</p>
-                  <a href="#" className={styles.helpLink}>Troubleshoot →</a>
+                  <h3>Discussion Forum</h3>
+                  <p>Join conversations about impact-based coordination</p>
+                  <a href="https://github.com/impact-commons/discussions" target="_blank" rel="noopener noreferrer" className={styles.helpLink}>Join Forum →</a>
                 </div>
                 <div className={styles.helpCard}>
-                  <h3>Community Support</h3>
-                  <p>Get help from the DarcOS community</p>
-                  <a href="#" className={styles.helpLink}>Join Community →</a>
+                  <h3>Community Chat</h3>
+                  <p>Connect with other contributors and community members</p>
+                  <a href="#contact" className={styles.helpLink}>Join Chat →</a>
                 </div>
               </div>
             </section>

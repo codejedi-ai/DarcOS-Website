@@ -10,174 +10,143 @@ export default function IndexPage() {
       <VantaBackground />
       <div className={styles.app}>
         <header className={styles.hero}>
-          <img src={logo} alt="DarcOS logo" className={styles.logo} />
-          <h1 className={styles.title}>DarcOS</h1>
-          <p className={styles.acronym}>DARCY128 Architecture Runtime Computing Operating System</p>
-          <p className={styles.originalAcronym}>Device Agnostic Runtime Compatible Operating System</p>
-          <p className={styles.tagline}>Web-Based OS for Exploring DARCY128 ISA</p>
+          <img src={logo} alt="Impact Commons logo" className={styles.logo} />
+          <h1 className={styles.title}>Impact Commons</h1>
+          <p className={styles.acronym}>Labor valued by impact. Not by money.</p>
+          <p className={styles.tagline}>A new economic layer where solving real human and ecological needs—not maximizing profit—drives recognition, access, and influence.</p>
           <div className={styles.ctaRow}>
-            <a className={styles.primaryCta} href="#about">Learn More</a>
-            <a className={styles.secondaryCta} href="#features">Explore Features</a>
+            <a className={styles.primaryCta} href="#about">Join the Movement</a>
+            <a className={styles.secondaryCta} href="#how-it-works">Explore the Protocol</a>
           </div>
         </header>
 
         <main className={styles.main}>
           <section id="about" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Introducing DarcOS</h2>
+            <h2 className={styles.sectionTitle}>The Problem</h2>
             <p className={styles.sectionLead}>
-              <strong>DarcOS</strong> is a revolutionary web-based operating system that brings the theoretical world of 
-              128-bit processor architecture to your browser. Unlike traditional operating systems that require 
-              hardware installation, DarcOS runs entirely in your web browser, making advanced computer 
-              architecture concepts accessible to students, researchers, and enthusiasts worldwide.
+              <strong>Today, markets decide what matters.</strong> If you can't pay, your problem is invisible.
+              Just because a problem is profitable doesn't mean it's more worth solving. True value lies in
+              impact—not income.
             </p>
             <p className={styles.sectionLead}>
-              Built on the foundation of proven 32-bit MIPS instruction set architecture, DarcOS explores the 
-              theoretical boundaries of the <strong>DARCY128 ISA</strong> - a novel 128-bit instruction set inspired by 
-              MIPS but evolving into a 128-bit processor. Through the <strong>HIPS128</strong> (Hundreds Instruction 
-              Per Second) architecture, DarcOS demonstrates how modern web technologies can simulate complex 
-              processor architectures while acknowledging the energy constraints that make 128-bit processors 
-              currently impractical for real-world deployment.
+              Our current economic system values labor based on profit potential, not social impact. This leaves
+              critical human and ecological needs—clean water access, mental health support, ecosystem
+              restoration, care work—systematically undervalued and underfunded. The most profitable problems
+              aren't necessarily the most urgent ones humanity faces.
             </p>
             <p className={styles.sectionLead}>
-              DarcOS represents the future of educational computing - where theoretical concepts become 
-              tangible through interactive web simulation, bridging the gap between academic research and 
-              practical understanding.
+              <strong>Impact Commons</strong> is a Web3-native protocol that replaces profit-driven incentives with
+              verified social impact as the basis for recognizing labor and allocating resources. We're building
+              an economic layer where solving real problems—not maximizing shareholder returns—drives influence,
+              access, and recognition.
             </p>
           </section>
 
-          <section id="features" className={styles.section}>
-            <h2 className={styles.sectionTitle}>DARCY128 ISA Features</h2>
+          <section id="how-it-works" className={styles.section}>
+            <h2 className={styles.sectionTitle}>How It Works</h2>
             <div className={styles.cards}>
               <div className={styles.card}>
-                <h3>DARCY128 Architecture</h3>
+                <h3>1. Verify a Need</h3>
                 <p>
-                  Theoretical 128-bit instruction set inspired by MIPS but evolving into 
-                  a 128-bit processor, exploring the boundaries of processor design and energy efficiency.
+                  Communities co-attest real problems using decentralized verification. For example:
+                  "Clean water access in Village X" or "Mental health support for community Y."
+                  Needs are validated through collective attestation, not market demand.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>HIPS128 Processor</h3>
+                <h3>2. Anonymous Undertaking</h3>
                 <p>
-                  Hundreds Instruction Per Second architecture designed to emulate 
-                  128-bit processing capabilities while acknowledging energy constraints.
+                  Anyone can propose solutions with their identity hidden and intent verified.
+                  This prevents bias and ensures that ideas are judged on merit and potential impact,
+                  not on who proposes them.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>Web-Based Simulation</h3>
+                <h3>3. Impact Validation</h3>
                 <p>
-                  Accessible through modern web browsers, enabling educational 
-                  exploration of advanced processor concepts without specialized hardware.
+                  Beneficiaries privately rate the actual value delivered. Only the average impact score
+                  is made public. No extortion. No bias. Real impact verified by those who experience it.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>MIPS-Inspired Design</h3>
+                <h3>Privacy-First Design</h3>
                 <p>
-                  Inspired by proven 32-bit MIPS instruction set architecture, 
-                  DARCY128 evolves the familiar MIPS concepts into 128-bit processing capabilities.
+                  Built with zero-knowledge proofs and privacy-preserving cryptography. Personal data
+                  stays private while enabling collective verification of impact.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>Educational Platform</h3>
+                <h3>Community Governance</h3>
                 <p>
-                  Designed for learning and experimentation with novel ISA concepts, 
-                  making advanced processor architecture accessible to students and researchers.
+                  Decentralized and community-governed through transparent on-chain coordination.
+                  No central authority decides what matters—communities do.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3>Energy-Aware Design</h3>
+                <h3>Open Source</h3>
                 <p>
-                  Acknowledges the immense energy requirements of 128-bit processors, 
-                  exploring theoretical limits while maintaining educational value.
+                  Fully transparent, auditable, and forkable. Built on Ethereum Attestation Service,
+                  MACI, and Semaphore for verifiable trust without centralized control.
                 </p>
               </div>
             </div>
           </section>
 
-          <section id="downloads" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Access DarcOS</h2>
+          <section id="tech-stack" className={styles.section}>
+            <h2 className={styles.sectionTitle}>Built on Web3</h2>
             <div className={styles.downloadGrid}>
               <div className={styles.downloadCard}>
-                <h3>Web Application</h3>
-                <p>Access DarcOS directly in your browser - no download required</p>
-                <a href="#features" className={styles.downloadBtn}>Explore Now</a>
+                <h3>Ethereum Attestation Service</h3>
+                <p>Verifiable on-chain attestations for needs, solutions, and impact validation</p>
               </div>
               <div className={styles.downloadCard}>
-                <h3>Darcy128 Documentation</h3>
-                <p>Reference materials for the Darcy128 ISA and HIPS128 architecture</p>
-                <a href="/mipsref.pdf" target="_blank" className={styles.downloadBtn}>View PDF</a>
+                <h3>MACI (Minimal Anti-Collusion Infrastructure)</h3>
+                <p>Privacy-preserving voting and coordination resistant to bribery and coercion</p>
               </div>
               <div className={styles.downloadCard}>
-                <h3>Source Code</h3>
-                <p>Complete source code and educational resources</p>
-                <a href="https://github.com/codejedi-ai/DarcOS-Website" target="_blank" className={styles.downloadBtn}>View on GitHub</a>
-              </div>
-            </div>
-          </section>
-
-          <section id="testimonials" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Educational Impact</h2>
-            <div className={styles.testimonials}>
-              <div className={styles.testimonial}>
-                <p>"Darcy128 ISA provides an excellent framework for understanding the theoretical limits of processor design. The web-based approach makes it accessible to students worldwide."</p>
-                <cite>- Dr. Sarah Chen, Computer Architecture Professor</cite>
-              </div>
-              <div className={styles.testimonial}>
-                <p>"The HIPS128 architecture brilliantly demonstrates the energy trade-offs in processor design. It's a perfect educational tool for exploring advanced computing concepts."</p>
-                <cite>- Marcus Rodriguez, Systems Engineering Student</cite>
-              </div>
-              <div className={styles.testimonial}>
-                <p>"DarcOS makes theoretical processor architecture tangible through web simulation. It's exactly what we need to inspire the next generation of computer scientists."</p>
-                <cite>- Prof. David Kim, Computer Science Education</cite>
+                <h3>Semaphore & Zero-Knowledge Proofs</h3>
+                <p>Anonymous identity verification and private impact ratings without exposing personal data</p>
               </div>
             </div>
           </section>
 
           <section id="philosophy" className={styles.section}>
-            <h2 className={styles.sectionTitle}>Educational Philosophy</h2>
-            <p className={styles.sectionBody}>
-              We believe that understanding theoretical processor architectures should be accessible to everyone. 
-              DarcOS demonstrates how web technologies can simulate complex systems, making advanced computer 
-              architecture concepts tangible and explorable. By acknowledging the energy constraints of 128-bit 
-              processors while providing educational value, we bridge the gap between theory and practical understanding.
-            </p>
+            <h2 className={styles.sectionTitle}>Core Philosophy</h2>
+            <div className={styles.testimonials}>
+              <div className={styles.testimonial}>
+                <p>"Philanthropy isn't charity—it's investment in shared resilience. When we value labor by its impact rather than its profit potential, we build economies that serve human and ecological needs."</p>
+              </div>
+              <div className={styles.testimonial}>
+                <p>"Non-monetary returns create lasting value. Recognition, access, and influence earned through verified impact are more meaningful than wealth extracted from scarcity."</p>
+              </div>
+              <div className={styles.testimonial}>
+                <p>"Labor is care. The work that sustains communities, heals ecosystems, and supports human flourishing deserves recognition—not because it's profitable, but because it matters."</p>
+              </div>
+            </div>
           </section>
 
-          <section id="wlp4-resources" className={styles.section}>
-            <h2 className={styles.sectionTitle}>DARCY128 & Implementation Resources</h2>
+          <section id="join" className={styles.section}>
+            <h2 className={styles.sectionTitle}>Join the Movement</h2>
             <div className={styles.resourceLinks}>
               <div className={styles.resourceCard}>
-                <h3>DARCY128 Emulator</h3>
-                <p>The actual implementation of the DARCY128 processor emulator</p>
-                <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
+                <h3>Build with Us</h3>
+                <p>Developers: Contribute to the open-source protocol and help build the impact economy</p>
+                <a href="https://github.com/impact-commons" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
                   View on GitHub
                 </a>
               </div>
               <div className={styles.resourceCard}>
-                <h3>Register State</h3>
-                <p>Inspect live DARCY128 registers (GPRs, PC, flags) in the emulator</p>
-                <a href="https://github.com/codejedi-ai/DARCY128-Emulator" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
-                  View Register UI
+                <h3>Join a Pilot Community</h3>
+                <p>For cooperatives, DAOs, and regenerative communities ready to experiment with impact-based coordination</p>
+                <a href="#contact" className={styles.resourceBtn}>
+                  Get Involved
                 </a>
               </div>
               <div className={styles.resourceCard}>
-                <h3>WLP4 Compiler</h3>
-                <p>WLP4 to assembly compilation pipeline for DARCY128</p>
-                <a href="https://github.com/codejedi-ai/CS241-wlp4-compile-pipeline" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
-                  View on GitHub
-                </a>
-              </div>
-              <div className={styles.resourceCard}>
-                <h3>WLP4 Specification</h3>
-                <p>Complete programming language specification and documentation</p>
-                <a href="https://student.cs.uwaterloo.ca/~cs241/wlp4/" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
-                  View Specification
-                </a>
-              </div>
-              <div className={styles.resourceCard}>
-                <h3>WLP4 Tutorial</h3>
-                <p>Learn WLP4 with comprehensive tutorials and examples</p>
-                <a href="https://student.cs.uwaterloo.ca/~cs241/wlp4/WLP4tutorial.html" target="_blank" rel="noopener noreferrer" className={styles.resourceBtn}>
-                  Start Tutorial
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for updates on the impact economy and protocol development</p>
+                <a href="#newsletter" className={styles.resourceBtn}>
+                  Subscribe
                 </a>
               </div>
             </div>

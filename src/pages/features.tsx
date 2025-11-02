@@ -10,120 +10,94 @@ export default function FeaturesPage() {
       <div className={styles.page}>
         <div className={styles.content}>
           <header className={styles.hero}>
-            <h1 className={styles.title}>Darcy128 ISA Advantages</h1>
-            <p className={styles.subtitle}>The theoretical benefits of 128-bit processor architecture</p>
+            <h1 className={styles.title}>How It Works</h1>
+            <p className={styles.subtitle}>A three-step process for impact-based coordination</p>
           </header>
 
           <main className={styles.main}>
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Darcy128 ISA Benefits</h2>
+              <h2 className={styles.sectionTitle}>The Process</h2>
               <div className={styles.featureGrid}>
                 <div className={styles.featureCard}>
-                  <div className={styles.featureIcon}>🚀</div>
-                  <h3>Massive Address Space</h3>
+                  <div className={styles.featureIcon}>1</div>
+                  <h3>Verify a Need</h3>
                   <p>
-                    With 128-bit addressing, Darcy128 can theoretically address 
-                    2^128 bytes of memory - far beyond any conceivable future 
-                    memory requirements, enabling unprecedented scalability.
+                    Communities collectively attest to real problems using decentralized verification.
+                    Through Ethereum Attestation Service, multiple community members co-sign that a
+                    need exists and deserves attention. This prevents fabricated problems and ensures
+                    resources flow toward genuine impact opportunities.
                   </p>
                 </div>
                 <div className={styles.featureCard}>
-                  <div className={styles.featureIcon}>⚡</div>
-                  <h3>Enhanced Precision</h3>
+                  <div className={styles.featureIcon}>2</div>
+                  <h3>Anonymous Undertaking</h3>
                   <p>
-                    128-bit operations provide exceptional precision for 
-                    scientific computing, cryptography, and high-precision 
-                    mathematical operations that would be impossible with 
-                    smaller word sizes.
+                    Anyone can propose solutions with identity hidden and intent verified through
+                    zero-knowledge proofs. Using Semaphore, contributors prove they're legitimate
+                    community members without revealing who they are. Ideas are judged on merit
+                    and potential impact, not on reputation or social capital.
                   </p>
                 </div>
                 <div className={styles.featureCard}>
-                  <div className={styles.featureIcon}>🔒</div>
-                  <h3>Advanced Security</h3>
+                  <div className={styles.featureIcon}>3</div>
+                  <h3>Impact Validation</h3>
                   <p>
-                    The massive address space provides natural protection 
-                    against memory-based attacks, while 128-bit encryption 
-                    keys offer virtually unbreakable security for 
-                    cryptographic operations.
-                  </p>
-                </div>
-                <div className={styles.featureCard}>
-                  <div className={styles.featureIcon}>🌐</div>
-                  <h3>Future-Proof Design</h3>
-                  <p>
-                    Built on proven 32-bit MIPS foundation, Darcy128 
-                    represents a theoretical evolution that could 
-                    accommodate future computing demands we can't yet imagine.
-                  </p>
-                </div>
-                <div className={styles.featureCard}>
-                  <div className={styles.featureIcon}>🧮</div>
-                  <h3>Parallel Processing</h3>
-                  <p>
-                    The HIPS128 architecture enables theoretical exploration 
-                    of massive parallel processing capabilities, pushing the 
-                    boundaries of concurrent computation.
-                  </p>
-                </div>
-                <div className={styles.featureCard}>
-                  <div className={styles.featureIcon}>🎓</div>
-                  <h3>Educational Value</h3>
-                  <p>
-                    Darcy128 serves as an excellent educational platform for 
-                    understanding processor design trade-offs, energy 
-                    constraints, and the theoretical limits of computing.
+                    Beneficiaries privately rate the value delivered using MACI (Minimal Anti-Collusion
+                    Infrastructure). Only aggregate impact scores become public. Individual ratings stay
+                    private to prevent coercion, extortion, and bias. Real impact verified by those
+                    who experience it.
                   </p>
                 </div>
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Technical Specifications</h2>
+              <h2 className={styles.sectionTitle}>Technical Foundation</h2>
               <div className={styles.specs}>
                 <div className={styles.specGroup}>
-                  <h3>Language Foundation</h3>
+                  <h3>Ethereum Attestation Service (EAS)</h3>
                   <ul>
-                    <li>WLP4P (Waterloo Language Plus Pointers Plus Procedures)</li>
-                    <li>Strict subset of C++ for predictable compilation</li>
-                    <li>Controlled pointer semantics</li>
-                    <li>Explicit memory management</li>
+                    <li>On-chain attestations for need verification</li>
+                    <li>Multi-signature co-attestation for community consensus</li>
+                    <li>Immutable record of verified needs and solutions</li>
+                    <li>Composable with existing Ethereum infrastructure</li>
                   </ul>
                 </div>
                 <div className={styles.specGroup}>
-                  <h3>Runtime Characteristics</h3>
+                  <h3>MACI (Minimal Anti-Collusion Infrastructure)</h3>
                   <ul>
-                    <li>Device-agnostic runtime surface</li>
-                    <li>Deterministic execution model</li>
-                    <li>Minimal kernel footprint</li>
-                    <li>Hardware abstraction without performance hiding</li>
+                    <li>Privacy-preserving voting for impact validation</li>
+                    <li>Resistant to bribery and coercion</li>
+                    <li>Cryptographic guarantees of voter privacy</li>
+                    <li>Publicly verifiable aggregate results</li>
                   </ul>
                 </div>
                 <div className={styles.specGroup}>
-                  <h3>Development Philosophy</h3>
+                  <h3>Semaphore & Zero-Knowledge Proofs</h3>
                   <ul>
-                    <li>Transparency in cost and behavior</li>
-                    <li>Explicit control over implicit magic</li>
-                    <li>Verifiability and formal reasoning</li>
-                    <li>Consistency across platforms</li>
+                    <li>Anonymous identity verification</li>
+                    <li>Proof of group membership without revealing identity</li>
+                    <li>Privacy-first architecture by design</li>
+                    <li>Protection against Sybil attacks</li>
                   </ul>
                 </div>
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Performance Characteristics</h2>
+              <h2 className={styles.sectionTitle}>Design Principles</h2>
               <div className={styles.performance}>
                 <div className={styles.perfCard}>
-                  <h3>Startup Time</h3>
-                  <p>Sub-second boot times on supported hardware</p>
+                  <h3>Privacy-First</h3>
+                  <p>Personal data stays private while enabling collective verification of impact</p>
                 </div>
                 <div className={styles.perfCard}>
-                  <h3>Memory Usage</h3>
-                  <p>Minimal memory footprint with predictable allocation patterns</p>
+                  <h3>Community-Governed</h3>
+                  <p>Decentralized coordination through transparent on-chain governance</p>
                 </div>
                 <div className={styles.perfCard}>
-                  <h3>CPU Overhead</h3>
-                  <p>Low overhead runtime with transparent performance costs</p>
+                  <h3>Open Source</h3>
+                  <p>Fully auditable, transparent, and forkable protocol for trustless coordination</p>
                 </div>
               </div>
             </section>

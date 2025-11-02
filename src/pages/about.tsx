@@ -10,71 +10,70 @@ export default function AboutPage() {
       <div className={styles.page}>
         <div className={styles.content}>
           <header className={styles.hero}>
-            <h1 className={styles.title}>Why I Built DarcOS</h1>
-            <p className={styles.subtitle}>The story behind the theoretical processor architecture</p>
+            <h1 className={styles.title}>Philosophy</h1>
+            <p className={styles.subtitle}>Building an economy that values impact over profit</p>
           </header>
 
           <main className={styles.main}>
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>The Inspiration</h2>
+              <h2 className={styles.sectionTitle}>The Core Principle</h2>
               <p className={styles.sectionBody}>
-                DarcOS was born from a fascination with the theoretical limits of processor design. 
-                While 128-bit processors remain impractical due to immense energy requirements, 
-                I wanted to explore what such an architecture could look like and how it might 
-                function. The project represents a bridge between academic curiosity and practical 
-                understanding of computer architecture.
+                Just because a problem is profitable doesn't mean it's more worth solving. True value
+                lies in impact—not income. Impact Commons reimagines economic coordination around
+                this fundamental truth: labor should be valued by its verified social impact, not by
+                its ability to generate profit for shareholders.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>The Challenge</h2>
+              <h2 className={styles.sectionTitle}>Philanthropy as Investment</h2>
               <p className={styles.sectionBody}>
-                Traditional computer architecture education often focuses on existing, commercially 
-                viable designs. But what about the theoretical frontiers? What happens when we 
-                push beyond current limitations? DarcOS addresses this gap by providing a 
-                tangible platform for exploring the Darcy128 ISA - a novel 128-bit instruction 
-                set architecture built on the proven foundation of 32-bit MIPS.
+                Philanthropy isn't charity—it's investment in shared resilience. When we support
+                work that addresses real human and ecological needs, we're not giving handouts;
+                we're building the foundation for collective thriving. Impact Commons creates
+                infrastructure for recognizing and coordinating this kind of value creation.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>The Solution</h2>
+              <h2 className={styles.sectionTitle}>Core Values</h2>
               <div className={styles.cards}>
                 <div className={styles.card}>
-                  <h3>Web-Based Accessibility</h3>
+                  <h3>Labor is Care</h3>
                   <p>
-                    By implementing DarcOS as a web application, I made advanced processor 
-                    architecture concepts accessible to anyone with a browser, removing 
-                    barriers to learning and exploration.
+                    The work that sustains communities, heals ecosystems, and supports human
+                    flourishing deserves recognition—not because it's profitable, but because
+                    it matters. Care work, community organizing, ecological restoration: these
+                    are forms of labor that create real value.
                   </p>
                 </div>
                 <div className={styles.card}>
-                  <h3>Educational Focus</h3>
+                  <h3>Non-Monetary Returns</h3>
                   <p>
-                    DarcOS serves as an educational tool, demonstrating how theoretical 
-                    concepts can be made tangible through interactive simulation, 
-                    inspiring the next generation of computer scientists.
+                    Recognition, access, and influence earned through verified impact are more
+                    meaningful than wealth extracted from scarcity. Reputation becomes access.
+                    Demonstrated impact creates opportunities. Value flows to those who create it.
                   </p>
                 </div>
                 <div className={styles.card}>
-                  <h3>Energy-Aware Design</h3>
+                  <h3>Privacy & Dignity</h3>
                   <p>
-                    The HIPS128 architecture acknowledges the energy constraints of 
-                    128-bit processors while exploring their theoretical potential, 
-                    providing realistic insights into processor design trade-offs.
+                    Impact verification must never compromise human dignity. Anonymous undertaking
+                    and private ratings protect both contributors and beneficiaries from coercion,
+                    bias, and exploitation.
                   </p>
                 </div>
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>The Vision</h2>
+              <h2 className={styles.sectionTitle}>Building a New Economic Layer</h2>
               <p className={styles.sectionBody}>
-                DarcOS represents more than just a theoretical exercise - it's a demonstration 
-                of how modern web technologies can simulate complex systems, making advanced 
-                computer architecture concepts accessible to students, researchers, and 
-                enthusiasts worldwide. By exploring the boundaries of what's possible, 
-                we gain deeper insights into what's practical.
+                Impact Commons isn't trying to replace markets or governments—it's building a
+                complementary economic layer that enables coordination around shared needs without
+                requiring profit extraction. A space where communities can recognize and reward
+                impact directly, where solving urgent problems is valued regardless of market
+                demand, and where labor creates lasting value beyond financial returns.
               </p>
             </section>
           </main>
